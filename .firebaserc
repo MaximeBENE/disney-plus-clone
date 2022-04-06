@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "disney-31mb",
+    "disney": "disney-31mb"
+  },
+  "targets": {}
+}
