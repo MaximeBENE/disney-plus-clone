@@ -73,7 +73,7 @@ const Header = () => {
   return (
     <Nav>
       <Logo href="/">
-        <img src="/images/logo.svg" alt="" />
+        <img src={process.env.PUBLIC_URL +"/images/logo.svg" } alt="" />
       </Logo>
       {!userName ? (
         <Login onClick={handleAuth}>Login</Login>
@@ -81,47 +81,47 @@ const Header = () => {
         <>
           <NavMenu>
             <a href="/home">
-              <img src="/images/home-icon.svg" alt="HOME" />
+              <img src={process.env.PUBLIC_URL +"/images/home-icon.svg" } alt="HOME" />
               <span className="hidden">HOME</span>
             </a>
             <a href="/search">
-              <img src="/images/search-icon.svg" alt="SEARCH" />
+              <img  src={process.env.PUBLIC_URL +"/images/search-icon.svg"} alt="SEARCH" />
               <span className="hidden">SEARCH</span>
             </a>
             <a href="/watchlist">
-              <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
+              <img src={process.env.PUBLIC_URL +"/images/watchlist-icon.svg"} alt="WATCHLIST" />
               <span className="hidden">WATCHLIST</span>
             </a>
             <Dots>
             <a href="/search">
-              <img src="/images/icons-menu.png" alt="DOTS" />
+              <img src={process.env.PUBLIC_URL +"/images/icons-menu.png"} alt="DOTS" />
               <span></span>
             </a>
             <DropDownMenu>
             <a href="/originals">
-              <img src="/images/original-icon.svg" alt="ORIGINALS" />
+              <img src={process.env.PUBLIC_URL +"/images/original-icon.svg"} alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
             <a href="/movies">
-              <img src="/images/movie-icon.svg" alt="MOVIES" />
+              <img src={process.env.PUBLIC_URL +"/images/movie-icon.svg"} alt="MOVIES" />
               <span>MOVIES</span>
             </a>
             <a href="/series">
-              <img src="/images/series-icon.svg" alt="SERIES" />
+              <img src={process.env.PUBLIC_URL +"/images/series-icon.svg"} alt="SERIES" />
               <span>SERIES</span>
             </a>
             </DropDownMenu>
             </Dots>
             <a href="/originals" className="hidden">
-              <img src="/images/original-icon.svg" alt="ORIGINALS" />
+              <img src={process.env.PUBLIC_URL +"/images/original-icon.svg"} alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
             <a href="/movies" className="hidden">
-              <img src="/images/movie-icon.svg" alt="MOVIES" />
+              <img src={process.env.PUBLIC_URL +"/images/movie-icon.svg"} alt="MOVIES" />
               <span>MOVIES</span>
             </a>
             <a href="/series" className="hidden">
-              <img src="/images/series-icon.svg" alt="SERIES" />
+              <img src={process.env.PUBLIC_URL +"/images/series-icon.svg"} alt="SERIES" />
               <span>SERIES</span>
             </a>            
           </NavMenu>

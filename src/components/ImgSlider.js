@@ -15,24 +15,30 @@ const ImgSlider = () => {
   };
   return (
     <Carousel {...settings}>
+
       <Wrap>
         <a alt="image">
-          <img src="/images/slider-badag.jpg" alt="" />
+          <img src={process.env.PUBLIC_URL +"/images/slider-moonKnightjpg.jpg"} alt="" />
         </a>
       </Wrap>
       <Wrap>
         <a alt="image">
-          <img src="/images/slider-scale.jpg" alt="" />
+          <img src={process.env.PUBLIC_URL +"/images/slider-badag.jpg"} alt="" />
+        </a>
+      </Wrap>
+      <Wrap>
+        <a alt="image">
+          <img src={process.env.PUBLIC_URL +"/images/slider-scale.jpg"} alt="" />
         </a>
       </Wrap>
       <Wrap>
         <a>
-          <img src="/images/slider-badging.jpg" alt="" />
+          <img src={process.env.PUBLIC_URL +"/images/slider-badging.jpg"} alt="" />
         </a>
       </Wrap>
       <Wrap>
         <a alt="image">
-          <img src="/images/slider-scales.jpg" alt="" />
+          <img src={process.env.PUBLIC_URL +"/images/slider-scales.jpg"} alt="" />
         </a>
       </Wrap>
     </Carousel>
@@ -95,7 +101,7 @@ const Wrap = styled.div`
     padding: 4px;
     img {
       width: 100%;
-      height: 100%;
+      height: 100%;      
     }
     &:hover {
       padding: 0;
