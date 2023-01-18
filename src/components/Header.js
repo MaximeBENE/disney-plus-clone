@@ -216,7 +216,7 @@ const NavMenu = styled.div`
       span:before {
         transform: scaleX(1);
         visibility: visible;
-        opacity: 1 !important;
+        opacity: 1;
       }
     }
   }
